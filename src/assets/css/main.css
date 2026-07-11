@@ -1,0 +1,83 @@
+/* ===========================
+   SK Inventory Pro v2
+   Global Styles
+=========================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1565C0;
+    --primary-dark: #0D47A1;
+    --background: #F5F7FA;
+    --surface: #FFFFFF;
+    --text: #222222;
+    --text-light: #666666;
+    --border: #E0E0E0;
+    --danger: #D32F2F;
+    --success: #2E7D32;
+    --radius: 12px;
+    --shadow: 0 4px 12px rgba(0,0,0,.08);
+    --transition: .25s ease;
+    --font: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--font);
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+}
+
+button:hover {
+    opacity: .9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px;
+}
+
+.card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
