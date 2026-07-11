@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports - SK Inventory Pro</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/reports.css">
+</head>
+
+<body>
+
+
+<header class="topbar">
+
+    <h1>
+        Report
+    </h1>
+
+
+    <button id="backBtn">
+        ← ပြန်
+    </button>
+
+</header>
+
+
+
+<main class="container">
+
+
+<section class="summary-grid">
+
+
+    <div class="card summary-card">
+
+        <h3>
+            အထည်စုစုပေါင်း
+        </h3>
+
+        <span id="reportItemCount">
+            0
+        </span>
+
+    </div>
+
+
+
+    <div class="card summary-card">
+
+        <h3>
+            ရောင်းပြီး
+        </h3>
+
+        <span id="reportSoldCount">
+            0
+        </span>
+
+    </div>
+
+
+
+    <div class="card summary-card">
+
+        <h3>
+            ဝယ်ဈေးစုစုပေါင်း
+        </h3>
+
+        <span id="totalCost">
+            0
+        </span>
+
+    </div>
+
+
+
+    <div class="card summary-card">
+
+        <h3>
+            အမြတ်
+        </h3>
+
+        <span id="totalProfit">
+            0
+        </span>
+
+    </div>
+
+
+</section>
+
+
+
+
+<section class="card">
+
+
+<h2>
+    Report Filter
+</h2>
+
+
+<div class="filter-box">
+
+
+    <label>
+        ရက်စွဲ
+    </label>
+
+
+    <input
+        type="date"
+        id="reportDate"
+    >
+
+
+
+    <label>
+        လ
+    </label>
+
+
+    <input
+        type="month"
+        id="reportMonth"
+    >
+
+
+</div>
+
+
+
+</section>
+
+
+
+<section class="card">
+
+
+<h2>
+    Summary
+</h2>
+
+
+<div id="reportList">
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<script type="module" src="../js/reports.js"></script>
+
+
+</body>
+
+</html>
