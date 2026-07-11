@@ -1,0 +1,69 @@
+/* ==========================
+   Bundles Page
+========================== */
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #1565C0;
+}
+
+.primary-btn {
+    width: 100%;
+    height: 48px;
+    background: #1565C0;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.primary-btn:hover {
+    background: #0D47A1;
+}
+
+#bundleMessage {
+    text-align: center;
+    margin-top: 12px;
+    color: #2E7D32;
+}
+
+.bundle-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bundle-card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.bundle-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1565C0;
+}
+
+.bundle-info {
+    margin-top: 6px;
+    color: #666;
+}
