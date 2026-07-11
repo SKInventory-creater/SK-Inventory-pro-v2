@@ -14,14 +14,14 @@ function initializeApp() {
     // Login Page
     if (page.includes("login.html")) {
       if (user) {
-        window.location.replace("/src/pages/dashboard.html");
+        window.location.replace("/dashboard.html");
       }
       return;
     }
 
     // Protected Pages
     if (!user) {
-      window.location.replace("/src/pages/login.html");
+      window.location.replace("/login.html");
       return;
     }
 
