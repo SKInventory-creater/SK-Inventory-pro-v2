@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SK Inventory Pro</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <h1>SK Inventory Pro</h1>
+
+    <button id="logoutBtn" class="logout-btn">
+        Logout
+    </button>
+</header>
+
+<main class="container">
+
+    <!-- Summary -->
+    <section class="summary-grid">
+
+        <div class="card summary-card">
+            <h3>ဘေထုတ်</h3>
+            <span id="bundleCount">0</span>
+        </div>
+
+        <div class="card summary-card">
+            <h3>အထည်စုစုပေါင်း</h3>
+            <span id="itemCount">0</span>
+        </div>
+
+        <div class="card summary-card">
+            <h3>ရောင်းပြီး</h3>
+            <span id="soldCount">0</span>
+        </div>
+
+        <div class="card summary-card">
+            <h3>ကျန်ရှိ</h3>
+            <span id="remainCount">0</span>
+        </div>
+
+    </section>
+
+    <!-- Search -->
+    <section class="card">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="ဘေထုတ် ရှာရန်..."
+        >
+
+    </section>
+
+    <!-- Actions -->
+    <section class="action-bar">
+
+        <button id="addBundleBtn">
+            + ဘေထုတ်အသစ်
+        </button>
+
+        <button id="reportBtn">
+            Report
+        </button>
+
+        <button id="settingsBtn">
+            Settings
+        </button>
+
+    </section>
+
+    <!-- Bundle List -->
+    <section
+        id="bundleList"
+        class="bundle-list">
+
+    </section>
+
+</main>
+
+<script type="module" src="../js/dashboard.js"></script>
+
+</body>
+</html>
