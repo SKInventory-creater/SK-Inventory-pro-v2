@@ -1,0 +1,63 @@
+rules_version = '2';
+
+service cloud.firestore {
+
+  match /databases/{database}/documents {
+
+
+    // Users
+
+    match /users/{userId} {
+
+      allow read, write:
+        if request.auth != null;
+
+    }
+
+
+
+    // Bundles
+
+    match /bundles/{bundleId} {
+
+      allow read, write:
+        if request.auth != null;
+
+    }
+
+
+
+    // Items
+
+    match /items/{itemId} {
+
+      allow read, write:
+        if request.auth != null;
+
+    }
+
+
+
+    // Settings
+
+    match /settings/{settingId} {
+
+      allow read, write:
+        if request.auth != null;
+
+    }
+
+
+
+    // Logs
+
+    match /logs/{logId} {
+
+      allow read, write:
+        if request.auth != null;
+
+    }
+
+  }
+
+}
