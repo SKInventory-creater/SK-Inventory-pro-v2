@@ -1,29 +1,25 @@
 {
   "name": "sk-inventory-pro-v2",
-  "version": "1.0.0",
-  "description": "SK Inventory Pro v2 Cloud Edition - Myanmar Inventory Management Android App",
-  "main": "index.js",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "start": "npx serve www",
-    "build": "echo Production Build Ready",
-    "android": "npx cap open android"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "android": "npx cap sync android",
+    "copy": "npx cap copy",
+    "sync": "npx cap sync"
   },
-  "keywords": [
-    "inventory",
-    "firebase",
-    "capacitor",
-    "android",
-    "cloud"
-  ],
-  "author": "SKInventory-creater",
-  "license": "MIT",
   "dependencies": {
     "@capacitor/android": "^7.4.2",
+    "@capacitor/app": "^7.0.2",
     "@capacitor/core": "^7.4.2",
-    "@capacitor/cli": "^7.4.2",
+    "@capacitor/status-bar": "^7.0.2",
     "firebase": "^12.0.0"
   },
   "devDependencies": {
-    "serve": "^14.2.4"
+    "@capacitor/cli": "^7.4.2",
+    "vite": "^7.0.0"
   }
 }
