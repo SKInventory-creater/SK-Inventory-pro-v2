@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ဘေထုတ် စီမံခန့်ခွဲမှု</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/bundles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <h1>
+        ဘေထုတ်စာရင်း
+    </h1>
+
+    <button id="backBtn">
+        ← ပြန်
+    </button>
+
+</header>
+
+
+<main class="container">
+
+
+    <!-- Add Bundle Form -->
+
+    <section class="card">
+
+        <h2>
+            ဘေထုတ်အသစ် ထည့်ရန်
+        </h2>
+
+
+        <form id="bundleForm">
+
+
+            <div class="form-group">
+
+                <label>
+                    ဘေထုတ်နံပါတ်
+                </label>
+
+                <input
+                    type="text"
+                    id="bundleNo"
+                    placeholder="ဥပမာ - A001"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label>
+                    Supplier
+                </label>
+
+                <input
+                    type="text"
+                    id="supplier"
+                    placeholder="Supplier Name"
+                >
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="primary-btn">
+
+                သိမ်းမည်
+
+            </button>
+
+
+        </form>
+
+
+        <p id="bundleMessage"></p>
+
+
+    </section>
+
+
+
+    <!-- Bundle List -->
+
+    <section>
+
+        <h2>
+            ဘေထုတ်များ
+        </h2>
+
+
+        <div
+            id="bundleList"
+            class="bundle-list">
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<script type="module" src="../js/bundles.js"></script>
+
+
+</body>
+
+</html>
