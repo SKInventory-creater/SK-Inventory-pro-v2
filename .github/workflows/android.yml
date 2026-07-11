@@ -29,10 +29,8 @@ jobs:
         run: npm install
 
 
-      - name: Install Capacitor Android
-        run: |
-          npm install @capacitor/android
-          npx cap add android
+      - name: Capacitor Sync
+        run: npx cap sync android
 
 
       - name: Build Vite App
