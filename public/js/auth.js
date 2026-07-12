@@ -17,14 +17,23 @@ loginForm?.addEventListener("submit", async (e) => {
     const password = passwordInput.value;
 
     try {
-        await login(email, password);
+    console.log("Login start");
 
-        window.location.href = "dashboard.html";
+    const user = await login(email, password);
+
+    console.log("Login success", user);
+
+    alert("Login Success");
+
+    window.location.href = "dashboard.html";
 
     } catch (error) {
-        console.log(error);
-        console.log(error.code);
-        console.log(error.message);
+    alert(error.code + "\n" + error.message);
+
+    console.error(error);
+
+    errorMessage.textContent = error.code;
+    }
         
         switch (error.code) {
             case "auth/invalid-credential":
