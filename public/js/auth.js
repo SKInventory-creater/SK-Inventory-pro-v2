@@ -9,59 +9,9 @@ const errorMessage = document.getElementById("errorMessage");
 loginForm?.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-<<<<<<< HEAD
-    errorMessage.textContent = "";
-    loginButton.disabled = true;
-    loginButton.textContent = "ဝင်နေသည်...";
-
-    const email = emailInput.value.trim();
-    const password = passwordInput.value;
-
-    try {
-    console.log("Login start");
-
-    const user = await login(email, password);
-
-    console.log("Login success", user);
-
-    alert("Login Success");
-
-    window.location.href = "dashboard.html";
-
-    } catch (error) {
-    alert(error.code + "\n" + error.message);
-
-    console.error(error);
-
-    errorMessage.textContent = error.code;
-    }
-        
-        switch (error.code) {
-            case "auth/invalid-credential":
-                errorMessage.textContent = "အီးမေးလ် သို့မဟုတ် စကားဝှက် မှားနေပါသည်။";
-                break;
-
-            case "auth/too-many-requests":
-                errorMessage.textContent = "ကြိုးစားမှုများလွန်းပါသည်။ ခဏစောင့်ပြီး ထပ်မံကြိုးစားပါ။";
-                break;
-
-            case "auth/network-request-failed":
-                errorMessage.textContent = "အင်တာနက်ချိတ်ဆက်မှုကို စစ်ဆေးပါ။";
-                break;
-
-            default:
-                errorMessage.textContent = "Login မအောင်မြင်ပါ။ ထပ်မံကြိုးစားပါ။";
-        }
-
-    } finally {
-
-        loginButton.disabled = false;
-        loginButton.textContent = "ဝင်မည်";
-=======
   errorMessage.textContent = "";
   loginButton.disabled = true;
   loginButton.textContent = "ဝင်နေသည်...";
->>>>>>> 5a54751 (Rewrite auth.js)
 
   try {
     await login(emailInput.value.trim(), passwordInput.value);
@@ -71,12 +21,15 @@ loginForm?.addEventListener("submit", async (e) => {
       case "auth/invalid-credential":
         errorMessage.textContent = "အီးမေးလ် သို့မဟုတ် စကားဝှက် မှားနေပါသည်။";
         break;
+
       case "auth/too-many-requests":
         errorMessage.textContent = "ကြိုးစားမှုများလွန်းပါသည်။ ခဏစောင့်ပြီး ထပ်မံကြိုးစားပါ။";
         break;
+
       case "auth/network-request-failed":
         errorMessage.textContent = "အင်တာနက်ချိတ်ဆက်မှုကို စစ်ဆေးပါ။";
         break;
+
       default:
         errorMessage.textContent = "Login မအောင်မြင်ပါ။";
     }
