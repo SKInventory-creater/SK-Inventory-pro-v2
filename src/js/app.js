@@ -12,15 +12,16 @@ function initializeApp() {
     const page = window.location.pathname;
 
     // Login Page
-    if (page.includes("login.html")) {
+if (page.includes("pages/login.html")) {
   if (user) {
-    window.location.replace("dashboard.html");
+    window.location.replace("./pages/dashboard.html");
   }
   return;
 }
 
+// Protected Pages
 if (!user) {
-  window.location.replace("login.html");
+  window.location.replace("./pages/login.html");
   return;
 }
 
