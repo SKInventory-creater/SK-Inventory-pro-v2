@@ -25,6 +25,7 @@ loginForm?.addEventListener("submit", async (e) => {
         console.log(error);
         console.log(error.code);
         console.log(error.message);
+        
         switch (error.code) {
             case "auth/invalid-credential":
                 errorMessage.textContent = "အီးမေးလ် သို့မဟုတ် စကားဝှက် မှားနေပါသည်။";
