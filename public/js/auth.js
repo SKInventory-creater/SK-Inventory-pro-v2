@@ -22,7 +22,9 @@ loginForm?.addEventListener("submit", async (e) => {
         window.location.href = "dashboard.html";
 
     } catch (error) {
-
+        console.log(error);
+        console.log(error.code);
+        console.log(error.message);
         switch (error.code) {
             case "auth/invalid-credential":
                 errorMessage.textContent = "အီးမေးလ် သို့မဟုတ် စကားဝှက် မှားနေပါသည်။";
