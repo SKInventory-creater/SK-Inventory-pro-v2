@@ -13,17 +13,16 @@ function initializeApp() {
 
     // Login Page
     if (page.includes("login.html")) {
-      if (user) {
-        window.location.replace("/dashboard.html");
-      }
-      return;
-    }
+  if (user) {
+    window.location.replace("dashboard.html");
+  }
+  return;
+}
 
-    // Protected Pages
-    if (!user) {
-      window.location.replace("/login.html");
-      return;
-    }
+if (!user) {
+  window.location.replace("login.html");
+  return;
+}
 
     console.log("User Logged In:", user.email);
   });
