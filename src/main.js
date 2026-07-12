@@ -1,19 +1,8 @@
-// Global CSS
+// Global Styles
 import "./assets/css/main.css";
 
-// Firebase
-import { authState } from "./firebase/auth.js";
+// Initialize App
+import "./js/app.js";
 
-// App
-import { initLogin } from "./js/auth.js";
-import { initDashboard } from "./js/dashboard.js";
-
-const app = document.getElementById("app");
-
-authState((user) => {
-  if (user) {
-    initDashboard(app, user);
-  } else {
-    initLogin(app);
-  }
-});
+// App Entry
+console.log("SK Inventory Pro v2 Started");
